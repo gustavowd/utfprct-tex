@@ -98,7 +98,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Pacotes carregados
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\RequirePackage[a-1b]{pdfx}
 \RequirePackage{silence}
 % Supress warning: captions config. via caption package interface instead the memoir class
 \WarningFilter{memoir}{For the caption package}
@@ -191,7 +191,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Configurações do pacote hyperref
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \hypersetup{%% Opções do pacote hyperref
   breaklinks=true,%%
   colorlinks=true,%%
@@ -204,7 +203,6 @@
   pdfdisplaydoctitle=true,%%
   pdfpagelayout=SinglePage%%
 }
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Configurações do pacote abntex2cite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
