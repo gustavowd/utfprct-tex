@@ -1123,7 +1123,7 @@
         \MakeUppercase{\imprimirnomedoautor}\par%% Autor(a)
         \MakeUppercase{\imprimirnomedoautordois}\\[263pt]%% Autor(a) 2
       }{%% Insere 1 autor(a)
-        \MakeUppercase{\imprimirnomedoautor}\\[285pt]%% Autor(a)
+        \MakeUppercase{\imprimirnomedoautor}\\[160pt]%% Autor(a)
       }
     }
     \ifthenelse{\equal{\imprimiratribuicotutela}{true}}{%%
@@ -1162,12 +1162,27 @@
       }%end parbox
     \end{Spacing}
   \end{flushright}
-  \vspace*{\stretch{1}}%% Espaçamento vertical
+  \vspace*{90pt}%% Espaçamento vertical
   \begin{center}%% Texto centralizado
     \bfseries%% Texto em negrito
     \MakeUppercase{\imprimircidade}\par%% Cidade
     \MakeUppercase{\imprimirano}%% Ano
   \end{center}
+	\begin{figure*}[b]
+		\hspace{-0.9cm}
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[scale=1.2]{by-nc.png}
+			\par
+			\href{https://creativecommons.org/licenses/by-nc/4.0/deed.pt}{\color{blue}{4.0 Internacional}}
+		\end{minipage}
+		\begin{minipage}{0.7\textwidth}
+			Esta licença permite que outros remixem, adaptem e criem a partir do seu trabalho para fins não comerciais e, embora os novos trabalhos tenham de lhe atribuir o devido crédito e não possam ser usados para fins comerciais, os usuários não têm de licenciar esses trabalhos derivados sob os mesmos termos. Conteúdos elaborados por terceiros, citados e referenciados nesta obra não são cobertos pela licença.
+	\end{minipage}
+	\end{figure*}
+  %\begin{minipage}{\textwidth}
+	%\includepdf[pages=1-, linktodoc=true, link=true,  linkname="http://www.google.com.br"]{CC-BY-NC.pdf}
+  %\end{minipage}
 }
 \newcommand{\incluirfolhaderosto}[1][\folhaderostoname]{%% Inclusão da folha de rosto (com ou sem ficha catalográfica)
   \@ifstar\imprimirfolhaderostostar\imprimirfolhaderostonostar%% Verificação do asterisco (*)
