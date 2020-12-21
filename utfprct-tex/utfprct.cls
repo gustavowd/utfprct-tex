@@ -425,6 +425,10 @@
 \providecommand{\imprimirtituloemmultiplaslinhas}{Título: \par Subtítulo}
 \newcommand{\TituloEmMultiplasLinhas}[1]{\renewcommand{\imprimirtituloemmultiplaslinhas}{#1}}
 
+%% Título em multiplas linhas em inglês
+\providecommand{\imprimirtituloemmultiplaslinhasingles}{Título: \par Subtítulo}
+\newcommand{\TituloEmMultiplasLinhasIngles}[1]{\renewcommand{\imprimirtituloemmultiplaslinhasingles}{#1}}
+
 %% Dia da defesa com número de dígitos exatos (opcional)
 \providecommand{\imprimirdia}{1}
 \newcommand{\Dia}[1]{\renewcommand{\imprimirdia}{#1}}
@@ -1123,7 +1127,7 @@
         \MakeUppercase{\imprimirnomedoautor}\par%% Autor(a)
         \MakeUppercase{\imprimirnomedoautordois}\\[263pt]%% Autor(a) 2
       }{%% Insere 1 autor(a)
-        \MakeUppercase{\imprimirnomedoautor}\\[160pt]%% Autor(a)
+        \MakeUppercase{\imprimirnomedoautor}\\[100pt]%% Autor(a)
       }
     }
     \ifthenelse{\equal{\imprimiratribuicotutela}{true}}{%%
@@ -1132,6 +1136,8 @@
     	}{}
     }{}
     {\large\MakeUppercase{\imprimirtituloemmultiplaslinhas}}\\[35pt]%% Título do documento
+    
+    {\large\MakeUppercase{\imprimirtituloemmultiplaslinhasingles}}\\[35pt]%% Título do documento
   \end{center}
   \begin{flushright}%% Alinhamento à direita
     \begin{Spacing}{1.0}%% Espaçamento simples entre linhas
@@ -1162,7 +1168,7 @@
       }%end parbox
     \end{Spacing}
   \end{flushright}
-  \vspace*{90pt}%% Espaçamento vertical
+  \vspace*{60pt}%% Espaçamento vertical
   \begin{center}%% Texto centralizado
     \bfseries%% Texto em negrito
     \MakeUppercase{\imprimircidade}\par%% Cidade
