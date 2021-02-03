@@ -1137,7 +1137,7 @@
     }{}
     {\large\MakeUppercase{\imprimirtituloemmultiplaslinhas}}\\[35pt]%% Título do documento
     
-    {\large\MakeUppercase{\imprimirtituloemmultiplaslinhasingles}}\\[35pt]%% Título do documento
+    {\normalsize\MakeUppercase{\imprimirtituloemmultiplaslinhasingles}}\\[35pt]%% Título do documento
   \end{center}
   \begin{flushright}%% Alinhamento à direita
     \begin{Spacing}{1.0}%% Espaçamento simples entre linhas
